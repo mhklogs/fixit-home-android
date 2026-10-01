@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "FixIt",
+    "slug": "fixit",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "fixit",
+    "newArchEnabled": true,
+    "experiments": {
+      "tsconfigPaths": true
+    },
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FAF9F7"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.fixit.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FAF9F7"
+      },
+      "package": "com.fixit.app",
+      "permissions": ["CAMERA", "ACCESS_FINE_LOCATION"]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        { "cameraPermission": "Allow FixIt to access your camera for job photos." }
+      ],
+      [
+        "expo-location",
+        { "locationWhenInUsePermission": "Allow FixIt to use your location for nearby job matching." }
+      ],
+      [
+        "expo-image-picker",
+        { "photosPermission": "Allow FixIt to access your photos to upload job images." }
+      ]
+    ]
+  }
+}
